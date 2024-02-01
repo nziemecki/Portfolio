@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        /* Style for the Jumbotron with background image */
+        .jumbotron {
+            background: url('h2.jpg') center center;
+            background-size: cover;
+            color: #fff; /* Text color on top of the background image */
+            padding: 100px 0; /* Adjust the padding as needed */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Portfolio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="NatZiemeckiResume.pdf">Resume</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Nat Ziemecki</h1>
+            <p>Spatial Data Scientist & Software Developer</p>
+        </div>
+    </div>
+
+    <section id="about-me-box">
+     
+        <div class="text-center">
+        <h2>About Me</h2>
+        <p>I love adventure! With a wide range of skills and
+           experience, I’ve been an organizer, I've designed and led research efforts including survey design, field work, and data collection,
+            and have years of practice doing hands-on work in natural resource management.
+           <br></br>
+            Now I am leaning into my interests in Geographic Information Systems (GIS), Data Science, and Web Development.
+            Because of my versaility, I am quick and skillful in learning new things.
+            Proficient in Python, SQL, and R, I specialize in spatial data management and analysis, complemented by web design skills in JavaScript, CSS, and HTML.
+             My expertise extends to GIS analysis tools,
+             including ArcPy and Rasterio, enabling me to lead spatial data manipulation projects seamlessly.
+             Mapping and beautiful visualization is a strength I am proud of, and love to bring into my work.
+              I have utilized QGIS and Adobe Illustrator to make striking maps that guide the perspective of the viewer through their design.
+            Eager to continually learn,
+            I'm currently exploring AI modeling with Shiny, and working on a larger collaborative project to facilitate resource sharing.
+          </p>
+      </div>
+      </section>
+
+      <section id="projects">
+        <div class="container-fluid bg-3 text-center" style="max-width: 70%;">
+            <h3>Projects</h3><br>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="berlin.png" alt="Card image cap" width="200" height="150">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Map of Squats in Berlin</strong></h5>
+                            <p class="card-text">Berlin's famous occupied houses (squats) mapped using Open Street Map vector layers. The Berlin Wall is georeferenced from a Google Maps image, with custom styling.</p>
+                            <a href="FINALLAYOUTF.pdf" class="btn btn-primary">See Project</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="Chloropleth.png" alt="Card image cap" width="200" height="150">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Chloropleth Map</strong></h5>
+                            <p class="card-text">Leaflet-based chloropleth map showcasing COVID-19 cases per million people by county in the NYC/Philadelphia area using GeoJSON data.</p>
+                            <a href="GC4work.html" class="btn btn-primary">See Project</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="r.png" alt="Card image cap" width="200" height="150">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Field vs. Lab Chlorine Analyses Results EDA</strong></h5>
+                            <p class="card-text">EDA focusing on trends in Total Chlorine Analysis results, specifically exploring correlations between differences in lab and field analyses and time delays.</p>
+                            <a href="f_vs_l.pdf" class="btn btn-primary">See Project</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="Find point.png" alt="Card image cap" width="200" height="150">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Find the Hidden Location</strong></h5>
+                            <p class="card-text">Interactive game where users locate a hidden spot globally. Click to discover and permanently mark the location on the map. My hometown was chosen for this game.</p>
+                            <a href="NatGCA.html" class="btn btn-primary">See Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+
+    <footer class="container-fluid text-center">
+        <button type="button" class="btn btn-primary back-to-top-btn" onclick="scrollToTop()">Back to Top</button>
+    </footer>
+
+    <script>
+        function scrollToTop() {
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+        }
+    </script>
+
+</body>
+
+</html>

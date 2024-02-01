@@ -1,0 +1,42 @@
+#about-me-box {
+    background-color: #f2f2f2;
+    padding: 3%; /* Adjust as needed */
+    margin: 5% auto; /* Adjust as needed */
+    border-radius: 1rem; /* Equivalent to 10px, adjust as needed */
+    max-width: 70vw; /* 80% of the viewport width, adjust as needed */
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1); /* 1% of the viewport width for the shadow, adjust as needed */
+}
+
+#about-me-box .text-center {
+    font-size: 1.2em; /* or another responsive unit */
+    line-height: 1.5;
+}
+
+
+#projects {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.project-card {
+    margin-bottom: 30px;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-card .card-body {
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.project-card .card-text {
+    width: 80%; /* Adjust as needed */
+    margin: 0 auto; /* Center the text */
+}
+
+.project-card .btn {
+    margin-top: 10px;
+}
