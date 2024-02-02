@@ -1,25 +1,25 @@
 #about-me-box {
     background-color: #f2f2f2;
-    padding: 3%; /* Adjust as needed */
-    margin: 5% auto; /* Adjust as needed */
-    border-radius: 1rem; /* Equivalent to 10px, adjust as needed */
-    max-width: 70vw; /* 80% of the viewport width, adjust as needed */
-    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1); /* 1% of the viewport width for the shadow, adjust as needed */
+    padding: 3%; 
+    margin: 5% auto; 
+    border-radius: 1rem; 
+    max-width: 70vw; 
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1); 
 }
 
 #about-me-box .text-center {
-    font-size: 1.2em; /* or another responsive unit */
+    font-size: 1.2em; 
     line-height: 1.5;
 }
 
 
 #projects {
     background-color: #f8f9fa;
-    padding: 50px 0;
+    padding: 5% 0; 
 }
 
 .project-card {
-    margin-bottom: 30px;
+    margin-bottom: 3%; 
 }
 
 .project-card img {
@@ -29,12 +29,16 @@
 
 .project-card .card-body {
     text-align: center;
-    padding: 20px; /* Add padding for better spacing */
+    padding: 2%; 
 }
 
 .project-card .card-text {
-    width: 80%; /* Adjust as needed */
-    margin: 0 auto; /* Center the text */
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+.project-card .btn {
+    margin-top: 1%; 
 }
 
 .project-card .btn {
