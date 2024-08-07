@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blog Post</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        /* Center the blog post content */
+        .blog-post {
+            text-align: center;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container blog-post">
+        <h1>Mapping Berlin's Squats</h1>
+        <p><br></br>
+            Mapping Berlin's famous occupied houses was an insightful and engaging project. I began by downloading
+            essential vector layers from Open Street Maps, providing a detailed foundation for the map. To ensure
+            comprehensive coverage, I also obtained data on Berlin's boroughs from Princeton University's mapping
+            project. With these layers in hand, I set the project's spatial reference system to WGS 84 / UTM Zone 33,
+            ensuring accuracy and consistency across all data points.
+
+            Next, I focused on processing the vector data. I exported the relevant boroughs, Friedrichshain-Kreuzberg
+            and Mitte, which are known for their historical squatting movements. These areas were clipped to create
+            layers for waterways, water bodies, buildings, roads, railways, and land use, each specifically named to
+            reflect their focus on these boroughs. This meticulous clipping ensured that the map would highlight the key
+            geographical features of these iconic neighborhoods.
+
+            A crucial part of the project was the creation of polygon vector layers for each squatting building. By
+            selecting and exporting these features, I created individual layers for each squat, including those that had
+            been evicted and those still standing. This differentiation provided a clear visual representation of the
+            status of these squats. To enhance the map's detail, I also found the centroids for these layers, creating
+            precise point layers for each squatting building, evicted and standing.
+
+            One of the more challenging aspects was georeferencing the Berlin Wall. With no free data available for the
+            wall's extent, I used a Google Maps screenshot and georeferenced it to overlay on the project map. By
+            creating a LineString vector layer, I was able to represent the Berlin Wall accurately, adding an important
+            historical context to the map.
+
+            Styling the vector layers was another critical step. I adjusted labels, opacity, stroke styles, and widths
+            to ensure that each layer was visually distinct and informative. The buildings and waterways were styled
+            using a color palette inspired by Johannes Vermeer’s "Glass of Wine," a nod to Berlin’s rich artistic
+            heritage. Adding labels to the water and styling the squats, both evicted and standing, with SVG icons,
+            enhanced the map's readability.
+
+            Finally, I arranged the layers for optimal visual presentation and created a new layout. This involved
+            turning off certain layers for clarity, adding main and inset maps, and locking the layers and styles to
+            maintain consistency. The finishing touches included adding a legend, north arrows, scale bars, and relevant
+            pictures and credits. Through this project, I was able to create a detailed and visually appealing map that
+            highlights the significant historical and cultural impact of Berlin's famous squats.
+
+            Click on the image to see full pamphlet PDF</p>
+
+        <!-- Image as a rendition of a PDF -->
+        <a href="FINALLAYOUTF.pdf" target="_blank">
+            <img src="berlin.png" alt="PDF Rendition of Berlin Map" class="img-responsive">
+        </a>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>Blog Post made on Aug-7, 2024</p>
+    </footer>
+
+</body>
+
+</html>
